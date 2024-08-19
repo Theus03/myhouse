@@ -10,6 +10,7 @@
 :root {
     --primary: #363049;
     --white: #ffffff;
+    --secondary: #eaeafc;
 }
 
 nav {
@@ -45,9 +46,48 @@ nav > ul > li > a:hover {
     margin-left: 5%;
 }
 
-.responsive {
-    display: none;
+
+.container-slogan {
+    position: absolute;
+    background-color: var(--secondary);
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
 }
+
+.text-slogan {
+    width: 70%;
+    text-align: center;
+    font: 700 6rem 'Inter';
+    color: var(--primary);
+    margin: 6rem;
+}
+
+.img-banner {
+    width: 100%;
+}
+.container-button {
+    width: 100%;
+}
+
+.btn {
+    padding: 2rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    height: 150px;
+    width: 60%;
+}
+
+.outline {
+    background-color: var(--secondary);
+    border: solid 8px var(--primary);
+}
+
 
 @media (max-width: 800px) {
     nav > ul {
@@ -60,5 +100,26 @@ nav > ul > li > a:hover {
     nav > ul > li > .logo {
         width: 4rem;
     }
-    
+
+    .container-slogan  {
+        flex-direction: column;
+    }
+
+    .text-slogan {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    nav > ul {
+        gap: 2rem;
+    }
+    nav > ul > li > a {
+        font-size: 0.6rem;
+    }
+
+    nav > ul > li > .logo {
+        width: 2rem;
+    }
 }
