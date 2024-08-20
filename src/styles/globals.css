@@ -23,7 +23,7 @@ nav > ul {
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    padding: 1rem;
+    padding: 1rem;;
 }
 
 nav > ul > li {
@@ -48,44 +48,83 @@ nav > ul > li > a:hover {
 
 
 .container-slogan {
-    position: absolute;
     background-color: var(--secondary);
-    top: 70%;
-    left: 10%;
-    width: 80%;
-    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
 }
 
 .text-slogan {
-    width: 70%;
+    width: 90%;
+    padding: 32px;
     text-align: center;
-    font: 700 6rem 'Inter';
+    font: 700 3rem 'Inter';
     color: var(--primary);
-    margin: 6rem;
 }
 
 .img-banner {
-    width: 100%;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
 }
 .container-button {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .btn {
-    padding: 2rem;
-    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    height: 150px;
-    width: 60%;
+    width: 80%;
+    cursor: pointer;
+    transition: 0.4s;
+    color: var(--primary);
 }
+
 
 .outline {
     background-color: var(--secondary);
-    border: solid 8px var(--primary);
+    border: solid 6px var(--primary);
+}
+
+.outline:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (max-width: 1280px){
+    .img-banner {
+        height: 80vh;
+    }
+
+    .container-slogan {
+        top: 50%;
+    }
+
+    .text-slogan  {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .outline {
+        border-width: 4px;
+    }
 }
 
 
@@ -103,11 +142,23 @@ nav > ul > li > a:hover {
 
     .container-slogan  {
         flex-direction: column;
+        top: 25%;
     }
 
     .text-slogan {
         width: 100%;
         text-align: center;
+        padding: 0px;
+        padding-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .img-banner {
+        height: 40vh;
+    }
+
+    .container-button {
+        padding: 1rem;
     }
 }
 
@@ -122,4 +173,23 @@ nav > ul > li > a:hover {
     nav > ul > li > .logo {
         width: 2rem;
     }
+
+    .container-slogan  {
+        top: 20%;
+    }
+
+    .text-slogan {
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .img-banner {
+        height: 30vh;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        width: 60%;
+    }
+
 }
