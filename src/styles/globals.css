@@ -163,13 +163,17 @@ nav > ul > li > a:hover {
     }
 
     .container-portfolio {
+        display: flex;
         flex-direction: column;
-        gap: 0rem;
+        gap: 2rem;
+        height: 200vh;
     }
     
     .card-portfolio   {
         margin-top: 2rem;
+        width: 30%;
     }
+    
 }
 
 
@@ -187,7 +191,7 @@ nav > ul > li > a:hover {
 
     .container-slogan  {
         flex-direction: column;
-        top: 25%;
+        top: 60%;
     }
 
     .text-slogan {
@@ -205,6 +209,20 @@ nav > ul > li > a:hover {
     .container-button {
         padding: 1rem;
     }
+
+    .container-portfolio {
+        height: 160vh;
+    }
+
+    .card-portfolio   {
+        width: 40%;
+    }
+}
+
+@media (max-width: 640px) {
+    .card-portfolio   {
+        width: 50%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -220,7 +238,7 @@ nav > ul > li > a:hover {
     }
 
     .container-slogan  {
-        top: 20%;
+        top: 60%;
     }
 
     .text-slogan {
@@ -235,6 +253,14 @@ nav > ul > li > a:hover {
     .btn {
         font-size: 0.8rem;
         width: 60%;
+    }
+
+    .icon-map {
+        width: 1rem;
+    }
+
+    .text-portfolio {
+        font-size: 0.8rem;
     }
 
 }
