@@ -112,14 +112,15 @@ nav > ul > li > a:hover {
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    height: 100vh;
+    height: 120vh;
 }
 
 .card-portfolio {
     background-color: var(--secondary);
-    margin-top: 12rem;
+    margin-top: 2rem;
     width: 20%;
     border-radius: 12px;
+    transition: 0.4s;
 }
 
 .card-portfolio > img {
@@ -137,6 +138,66 @@ nav > ul > li > a:hover {
 .text-portfolio {
     text-align: center;
     color: var(--primary);
+}
+
+.card-portfolio:hover {
+    transform: translateX(5%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.container-services {
+    background-color: var(--white);
+    display: grid;
+    place-items: center;
+}
+
+.box-services {
+    position: absolute;
+    top: 200%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 60%;
+}
+
+.service {
+    display: none;
+    align-items: center;
+}
+
+.service.active {
+    display: flex;
+}
+
+.service > img {
+    width: 32rem;
+    margin-left: 16rem;
+}
+.container-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+}
+.title-service {
+    color: var(--primary);
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-service {
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
 }
 
 @media (max-width: 1280px){

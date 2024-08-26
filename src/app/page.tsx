@@ -1,6 +1,7 @@
 import Button from "@/components/Button"
 import Menu from "@/components/Menu"
 import Portfolio from "@/components/Portfolio"
+import Services from "@/components/Sevices"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         </div>
       </section>
       <Portfolio/>
+      <Services/>
     </main>
   )
 }
