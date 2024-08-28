@@ -131,8 +131,12 @@ nav > ul > li > a:hover {
     animation: myAnim 1s ease 0s 1 normal forwards;
     margin-top: 2rem;
     width: 20%;
-    border-radius: 12px;
+    border-radius: 20px;
     transition: 0.4s;
+}
+
+.card-portfolio:hover {
+    margin-top: 0.8rem;
 }
 
 .card-portfolio > img {
