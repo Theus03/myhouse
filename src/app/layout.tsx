@@ -1,4 +1,6 @@
 import '../styles/globals.css';
+import { Toaster } from "react-hot-toast";
+
 
 export const metadata = {
   title: 'MyHouse',
@@ -15,7 +17,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="logo.svg" type="image/svg" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster position="top-center" toastOptions={{style: { padding: '20px', fontSize: '1.6rem' }}}/>
+      </body>
     </html>
   )
 }

@@ -10,7 +10,7 @@ export default function Home() {
       <section className="container-banner">
         <div className="container-slogan">
           <h2 className="text-slogan">FAREMOS DA SUA CASA,<br/> UM LUGAR PERFEITO<br/> PARA MORAR.</h2>
-          <Button _type="outline" _textButton={"Entrar em Contato"}/>
+          <Button _type="outline" _textButton={"Entrar em Contato"} _msgButton={"Solicitação Recebida! Em breve entraremos em contato. 👍😉"}/>
         </div>
       </section>
       <Portfolio/>
