@@ -299,6 +299,49 @@ nav > ul > li > a:hover {
 	}
 }
 
+hr {
+    padding: 2rem;
+    height: 30vh;
+    transform: translateY(-80%);
+    border: none;
+    background-color: var(--primary);
+    margin-bottom: -12%;
+}
+
+
+footer {
+    width: 100%;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    top: 280vh;
+}
+
+footer > img {
+    width: 6rem;
+}
+
+footer > hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0rem;
+    height: 14vh;
+    width: 0.2vw;
+    border-radius: 2px;
+    transform: translateY(0%);
+    border: none;
+    background-color: var(--primary);
+    margin-bottom: 0%;
+}
+footer > span {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
 @media (max-width: 1920px) {
     .container-img > img {
         width: 24rem;
@@ -378,6 +421,10 @@ nav > ul > li > a:hover {
     .solid {
         width: 100vh;
     }
+
+    footer  {
+        top: 380%;
+    }
     
 }
 
@@ -428,6 +475,37 @@ nav > ul > li > a:hover {
         top: 280%;
     }
 
+    footer {
+        width: 100%;
+        background: var(--secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    footer > img {
+        width: 6rem;
+    }
+            
+    footer > hr {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding: 0rem;
+        height: 14vh;
+        width: 0.2vw;
+        border-radius: 2px;
+        transform: translateY(0%);
+        border: none;
+        background-color: var(--primary);
+        margin-bottom: 0%;
+    }
+
+    footer > span {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -501,5 +579,22 @@ nav > ul > li > a:hover {
 
     .container-button {
         width: 20vh;
+    }
+
+    footer {
+        top: 280%;
+    }
+
+    footer > img {
+        width: 3rem;
+    }
+
+    footer > hr {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    footer > span  {
+        font-size: 1rem;
     }
 }

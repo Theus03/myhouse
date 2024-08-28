@@ -15,6 +15,11 @@ export default function Home() {
       </section>
       <Portfolio/>
       <Services/>
+      <footer>
+            <img src="logo.svg" alt="Logo da MyHouse" />
+            <hr />
+            <span>@myhouse</span>
+        </footer>
     </main>
   )
 }

@@ -1,6 +1,6 @@
 export default function Portfolio() {
     return (
-        <div className="container-portfolio">
+        <div id="portfolio" className="container-portfolio">
             <div className="card-portfolio">
                 <img src="new-york.png" alt="Imagem de New York" />
                 <div className="container-text-portfolio">

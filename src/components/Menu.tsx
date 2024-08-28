@@ -1,10 +1,21 @@
+'use client';
+import Link from "next/link"
+
 export default function Menu() {
+
+    const scrollToSection = (id: string) => {
+        let section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <nav>
             <ul>
-                <li><a href="">SERVIÇOS</a></li>
+                <li><Link href="" onClick={() => scrollToSection('portfolio')}>PORTFOLIO</Link></li>
                 <li><img className="logo" src="logo.svg" alt="" /></li>
-                <li><a href="">SAIR</a></li>
+                <li><Link href="" onClick={() => scrollToSection('servicos')}>SERVIÇOS</Link></li>
             </ul>
         </nav>
     )   
