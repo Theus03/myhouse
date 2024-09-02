@@ -349,15 +349,15 @@ footer > span {
 
 @media (max-height: 900px) and (max-width: 400px) {
     .container-portfolio {
-        height: 200vh;
+        height: 200vh !important;
     }
 
     .box-services {
-        top: 280%;
+        top: 280% !important;
     }
 
     footer {
-        top: 360%;
+        top: 360% !important;
     }
 }
 
