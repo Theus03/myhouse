@@ -351,6 +351,14 @@ footer > span {
     .container-portfolio {
         height: 200vh !important;
     }
+
+    .box-services {
+        top: 280% !important;
+    }
+
+    footer {
+        top: 360% !important;
+    }
 }
 
 @media (max-height: 900px) {
