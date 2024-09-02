@@ -347,7 +347,13 @@ footer > span {
     font-size: 1.3rem;
 }
 
-@media (max-height: 900px){
+@media (max-height: 900px) and (max-width: 400px) {
+    .container-portfolio {
+        height: 200vh !important;
+    }
+}
+
+@media (max-height: 900px) {
     .container-portfolio {
         height: 160vh !important;
     }
