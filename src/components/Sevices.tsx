@@ -3,7 +3,6 @@
 import Button from '@/components/Button';
 
 export default function Services() {
-
     const handleClickChangeService = (idTarget: String, e: React.MouseEvent<HTMLDivElement>) => {
         let elementServiceActive = document.querySelector('.service.active') as HTMLElement;
         elementServiceActive?.classList.remove('active');

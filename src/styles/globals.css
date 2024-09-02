@@ -346,6 +346,19 @@ footer > span {
     font-size: 1.3rem;
 }
 
+@media (max-height: 800px){
+    .container-portfolio {
+        height: 160vh !important;
+    }
+    .box-services {
+        top: 240% !important;
+    }
+
+    footer {
+        top: 330% !important;
+    }
+}
+
 @media (max-width: 1920px) {
     .container-img > img {
         width: 24rem;
