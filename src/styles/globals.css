@@ -163,8 +163,9 @@ nav > ul > li > a:hover {
 
 .container-services {
     background-color: var(--white);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-services {
